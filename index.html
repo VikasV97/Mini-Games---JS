@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" > 
+    <title> Mini Games </title>
+</head>
+<body>
+    <div class="container">
+        <h2>Parameter Calculator and Image Creator</h2>
+        <div class="flex-box-container">
+            <div>
+                <button class="btn btn-success" onclick="calculate()"> Calculate parameters </button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()"> reset </button>
+            </div>
+            <div>
+                <button class="btn btn-primary" onclick="imgGen()"> Generate Image </button>
+            </div>
+            <div>
+                <button class="btn btn-dark" onclick="remImg()"> Remove Image </button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+        
+        
+    </div>
+    <div class="container">
+        <div class="flex-box-container-1" id="img-result">
+            
+        </div>
+    </div>
+    
+    <script src="home.js"></script>
+    <div class="container"> 
+        <h2>Rock, Paper, Scissors</h2>
+        <div class="flex-box-container-2" id="flex-box-rps-div">
+            <div>
+                <h2>Choose One</h2>
+            </div>
+            <img id ="rock" src="rock.jpg" onclick="rpsGame(this)">
+            <img id ="paper" src="paper.png" onclick="rpsGame(this)">
+            <img id ="scissors" src="scissors.png" onclick="rpsGame(this) ">
+
+        </div>
+        <div class="flex-box-container-3">
+        <div id = "imgResult">
+            <p id="botResult"></p>
+        </div>
+        <div>
+            <p id="textResult"></p>
+        </div>
+        </div>
+        <div class="container">
+            <div>
+                <button class = "btn btn-danger" onclick="resetGame()">Reset Game</button>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Odd or Even Game of Toss</h2>
+            <div>
+                <button class="btn btn-dark" onclick="gameStart()">Start Game</button>
+            </div>
+            <div class="flex-box-container">
+                <div>
+                    <button class="btn btn-danger" onclick="oddChoice()">ODD</button>
+                </div>
+                <div>
+                    <button class="btn btn-success" onclick="evenChoice()">EVEN</button>
+                </div>
+                <div class="container">
+                    <p id = "oddEveTextResults"></p>
+                    <p id = "theSumResults"></p>
+                <div class="flex-box-container" id="oddEveResults">
+                    
+                </div>
+                </div>
+                               
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
